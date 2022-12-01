@@ -1,0 +1,97 @@
+:root {
+    --bg: #2f3530;
+    --text: #FFF;
+    --heading: #ecaf35;
+    --highlight: #d01117;
+  }
+  
+  body {
+    margin: 0 1em;
+    padding: 0;
+    /* max-width: 75ch; */
+    line-height: 1.4;
+    background-color: var(--bg);
+    color: var(--text);
+  
+    font-family: 'Signika', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+  
+  a {
+    color: var(--text);
+    /* text-decoration: none; */
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  a:hover {
+    text-shadow: 0 0 10px var(--highlight);
+  }
+  
+  .hero {
+    max-height: 100vh;
+    display: grid;
+    grid-template-areas: "fill";
+    text-align: center;
+    position: relative;
+  }
+
+  .hero > img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    grid-area: fill;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    grid-area: fill;
+    background: linear-gradient(transparent, transparent 80vh,var(--bg));
+    backdrop-filter: blur(1em);
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    max-height: 20vh;
+    max-width: 100%;
+    margin-inline: auto;
+    display: block;
+  }
+  
+  @media screen and (min-width: 600px), screen and (min-device-width: 600px) {
+    body {
+      margin: 0;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'K2D', sans-serif;
+    color: var(--heading);
+}
+
+header {
+    margin: 1rem auto 2rem auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header > div:not(:first-of-type) {
+    margin-inline-start: 1.5em;
+    /* padding-inline-start: 1.5em; */
+    /* border-inline-start: 1px solid var(--text); */
+}
