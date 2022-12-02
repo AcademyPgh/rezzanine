@@ -6,12 +6,13 @@
   }
   
   body {
-    margin: 0 1em;
+    margin: 0;
     padding: 0;
     /* max-width: 75ch; */
     line-height: 1.4;
     background-color: var(--bg);
     color: var(--text);
+    font-size: 1.2rem;
   
     font-family: 'Signika', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   }
@@ -50,7 +51,7 @@
     font-size: 1.5rem;
     grid-area: fill;
     background: linear-gradient(transparent, transparent 80vh,var(--bg));
-    backdrop-filter: blur(1em);
+    backdrop-filter: blur(0.5em);
     height: 100%;
     width: 100%;
     display:flex;
@@ -65,15 +66,9 @@
     display: block;
   }
   
-  @media screen and (min-width: 600px), screen and (min-device-width: 600px) {
-    body {
-      margin: 0;
-    }
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'K2D', sans-serif;
-    color: var(--heading);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'K2D', sans-serif;
+  color: var(--heading);
 }
 
 header {
@@ -94,4 +89,45 @@ header > div:not(:first-of-type) {
     margin-inline-start: 1.5em;
     /* padding-inline-start: 1.5em; */
     /* border-inline-start: 1px solid var(--text); */
+}
+
+.container {
+  max-width: 75ch;
+  margin: 2em 0.5rem;
+}
+
+
+.three-up {
+  margin: 2em 0.5rem;
+}
+
+.card {
+  margin: 1.5em 0;
+}
+
+.card > img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  margin: 1em auto;
+
+  box-shadow: 0px 10px 8px -7px var(--highlight);
+}
+
+
+
+@media screen and (min-width: 600px), screen and (min-device-width: 600px) {
+  .container {
+    margin: 2rem auto;
+  }
+  .three-up {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em 0;
+  }
+  .card {
+    max-width: 20vw;
+  }
+  
 }
