@@ -94,6 +94,25 @@ header > div:not(:first-of-type) {
 .container {
   max-width: 75ch;
   margin: 2em 0.5rem;
+  scrollbar-width:thin;
+  scrollbar-color:#d01117 rgba(47,53,48,0);
+
+}
+
+
+.container::-webkit-scrollbar {
+  background-color:rgba(47,53,48,0);
+  width: .5rem;
+  
+}
+.container::-webkit-scrollbar-thumb{
+  background-color:#d01117;
+  border-radius: 10px;
+}
+
+.backdrop-color {
+  background: rgb(47,53,48);
+  background: linear-gradient(90deg, rgba(47,53,48,0) 0%, rgba(47,53,48,1) 25%, rgba(47,53,48,1) 75%, rgba(47,53,48,0) 100%);
 }
 
 
@@ -113,6 +132,14 @@ header > div:not(:first-of-type) {
   margin: 1em auto;
 
   box-shadow: 0px 10px 8px -7px var(--highlight);
+}
+
+.list {
+  text-align: left;
+}
+
+li{
+  margin: 15px 0;
 }
 
 
