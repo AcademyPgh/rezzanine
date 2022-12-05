@@ -12,7 +12,7 @@ export default function Header(props) {
         <div><a href="/hours/">Hours & Pricing</a></div>
         <div><a href="">Events</a></div>
         <div><a href="">Community</a></div>
-        <div><a href="">Food</a></div>
+        <div><a href="/food/">Food</a></div>
         <div><a href="">FAQ</a></div>
       </header>
     )
