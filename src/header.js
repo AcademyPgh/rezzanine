@@ -12,7 +12,11 @@ export default function Header(props) {
 
     return (
       <header className={open && 'open'}>
-        <div className="hamburger-helper" onClick={() => {setOpen(!open)}} tabIndex="0" role={""}>
+        <div 
+          className="hamburger-helper" 
+          onClick={() => {setOpen(!open)}} 
+          tabIndex="0" 
+          role="button">
           <div className="hamburger">Menu</div>
         </div>
         <nav>
