@@ -1,4 +1,10 @@
 import React from "react";
+import { createRoot } from "react-dom/client";
+
+const header = document.querySelector('#header');
+const root = createRoot(header);
+root.render(<Header />);
+
 
 export default function Header(props) {
     return (

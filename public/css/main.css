@@ -1,5 +1,6 @@
 :root {
     --bg: #2f3530;
+    --bg-tr: #2f353055;
     --text: #FFF;
     --heading: #ecaf35;
     --highlight: #d01117;
@@ -70,7 +71,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    margin: 1rem auto 2rem auto;
+    padding: 1rem 0;
+    background-color: var(--bg-tr);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
