@@ -74,10 +74,6 @@ header {
     padding: 1rem 0;
     background-color: var(--bg-tr);
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -85,8 +81,21 @@ header {
     z-index: 1000;
 }
 
-header > div:not(:first-of-type) {
+header > nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header > nav > div:not(:first-of-type) {
     margin-inline-start: 1.5em;
+}
+
+.active-navlink {
+  font-weight: bold;
+  color: var(--heading)
 }
 
 .container {
