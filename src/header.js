@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import NavLink from "./NavLink";
 
@@ -8,15 +8,22 @@ root.render(<Header />);
 
 
 export default function Header(props) {
+  const [open, setOpen] = useState();
+
     return (
-      <header>
+      <header className={open && 'open'}>
+        <div className="hamburger-helper" onClick={() => {setOpen(!open)}} tabIndex="0" role={""}>
+          <div className="hamburger">Menu</div>
+        </div>
         <nav>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="">Hours & Pricing</NavLink>
-          <NavLink to="">Events</NavLink>
-          <NavLink to="">Community</NavLink>
+          <NavLink to="/pricing/">Hours & Pricing</NavLink>
+          <NavLink to="/games/">Games</NavLink>
+          <NavLink to="/events/">Events</NavLink>
+          <NavLink to="/community/">Community</NavLink>
           <NavLink to="/food/">Food</NavLink>
-          <NavLink to="">FAQ</NavLink>
+          <NavLink to="/faq/">FAQ</NavLink>
+          <NavLink to="/codeofconduct/">Code of Conduct</NavLink>
         </nav>
       </header>
     )
