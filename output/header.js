@@ -7,7 +7,7 @@ export default function Header(props) {
   }, "Events")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("a", {
     href: ""
   }, "Community")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("a", {
-    href: ""
+    href: "/food/"
   }, "Food")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("a", {
     href: ""
   }, "FAQ")));
