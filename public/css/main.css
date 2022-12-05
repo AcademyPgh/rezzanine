@@ -154,7 +154,7 @@ li{
 
 header {
   padding: 0.5rem 0.5rem 0.5rem 2.5rem;
-  background-color: var(--bg-tr);
+  background: linear-gradient(to right, transparent 2.4rem, var(--bg-tr) 2.4rem);
   position: absolute;
   top: 0;
   right: -9rem;
