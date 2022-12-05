@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import NavLink from "./NavLink";
 
 const header = document.querySelector('#header');
 const root = createRoot(header);
@@ -9,11 +10,14 @@ root.render(<Header />);
 export default function Header(props) {
     return (
       <header>
-        <div><a href="/hours/">Hours & Pricing</a></div>
-        <div><a href="">Events</a></div>
-        <div><a href="">Community</a></div>
-        <div><a href="/food/">Food</a></div>
-        <div><a href="">FAQ</a></div>
+        <nav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="">Hours & Pricing</NavLink>
+          <NavLink to="">Events</NavLink>
+          <NavLink to="">Community</NavLink>
+          <NavLink to="/food/">Food</NavLink>
+          <NavLink to="">FAQ</NavLink>
+        </nav>
       </header>
     )
 }
