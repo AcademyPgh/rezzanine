@@ -168,6 +168,7 @@ header.open {
 
 .hamburger-helper {
   cursor: pointer;
+  background-color: transparent;
 }
 .hamburger-helper:focus {
   outline: none;
@@ -225,6 +226,7 @@ header.open {
     left: 0;
     right: 0;
     padding: 0.5rem;
+    background: var(--bg-tr);
   }
   header > nav {
     display: flex;
