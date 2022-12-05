@@ -1,5 +1,6 @@
 :root {
     --bg: #2f3530;
+    --bg-tr: #2f353055;
     --text: #FFF;
     --heading: #ecaf35;
     --highlight: #d01117;
@@ -70,7 +71,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    margin: 1rem auto 2rem auto;
+    padding: 1rem 0;
+    background-color: var(--bg-tr);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +91,27 @@ header > div:not(:first-of-type) {
 
 .container {
   max-width: 75ch;
-  margin: 2rem 1rem;
+  margin: 2em 0.5rem;
+  scrollbar-width:thin;
+  scrollbar-color:#d01117 rgba(47,53,48,0);
+
+}
+
+
+.container::-webkit-scrollbar {
+  background-color:rgba(47,53,48,0);
+  width: .5rem;
+  
+}
+.container::-webkit-scrollbar-thumb{
+  background-color:#d01117;
+  border-radius: 10px;
+}
+
+.backdrop-color {
+  background: rgb(32, 36, 33);
+ box-shadow:0 0 10px 10px #424743;
+ border-radius: 5px;
 }
 
 
@@ -109,6 +131,37 @@ header > div:not(:first-of-type) {
   margin: 1em auto;
 
   box-shadow: 0px 10px 8px -7px var(--highlight);
+}
+
+.list {
+  text-align: left;
+}
+
+li{
+  margin: 15px 0;
+}
+
+.weiner {
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
 
 
