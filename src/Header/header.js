@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
-import NavLink from "./NavLink";
+import NavLink from "../NavLink";
 
 const header = document.querySelector('#header');
 const root = createRoot(header);

@@ -1,7 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import GameCard from "./GameCard";
-import './Games.css';
 
 const games = document.querySelector('#games');
 const root = createRoot(games);
