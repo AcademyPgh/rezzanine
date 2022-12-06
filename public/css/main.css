@@ -32,7 +32,7 @@
   }
   
   .hero {
-    max-height: 100vh;
+    /* max-height: 100vh; */
     display: grid;
     grid-template-areas: "fill";
     text-align: center;
@@ -41,7 +41,7 @@
 
   .hero > img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     grid-area: fill;
   }
@@ -53,9 +53,9 @@
     backdrop-filter: blur(0.5em);
     height: 100%;
     width: 100%;
-    display:flex;
+    /* display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
   }
 
   .logo {
@@ -63,6 +63,7 @@
     max-width: 100%;
     margin-inline: auto;
     display: block;
+    margin-block-start: 2rem;
   }
   
 h1, h2, h3, h4, h5, h6 {
@@ -133,6 +134,16 @@ header > div:not(:first-of-type) {
   box-shadow: 0px 10px 8px -7px var(--highlight);
 }
 
+.ctct-inline-form {
+  position: static;
+  margin: 0 auto;
+  left: 38%;
+  /* top: 50%; */
+  height: 30vh;
+  width: 65ch;
+  bottom: 10%;
+}
+
 .formlist {
   display: block;
   list-style: none;
@@ -188,5 +199,19 @@ li{
   .card {
     max-width: 20vw;
   }
+  .ctct-inline-form {
+    position: static;
+    margin: 0 auto;
+    left: 38%;
+    /* top: 50%; */
+    height: 30vh;
+    width: 65ch;
+    bottom: 10%;
+  }
   
+  
+}
+
+.g-recaptcha {
+  display: none;
 }
