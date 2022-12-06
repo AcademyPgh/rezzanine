@@ -317,4 +317,23 @@ nav {
   .game-cards img {
       grid-auto-rows: 325px;
   }
+  .image-right {
+    display: grid;
+    grid-template-columns: auto minmax(30vw, 1fr);
+    margin: 2rem auto;
+    width: max-content;
+  }
+
+  .image-right div {
+    max-width: 65ch;
+  }
+
+}
+
+.image-right {
+  margin: 2rem 1rem;
+}
+
+.image-right img {
+  max-width: 100%;
 }
