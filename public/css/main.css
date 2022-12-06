@@ -1,71 +1,97 @@
+/* 
+  Theme colors (CSS custom properties)
+*/
 :root {
-    --bg: #2f3530;
-    --bg-tr: #2f353055;
-    --text: #FFF;
-    --heading: #ecaf35;
-    --highlight: #d01117;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.4;
-    background-color: var(--bg);
-    color: var(--text);
-    font-size: 1.2rem;
-    overflow-x: hidden;
-  
-    font-family: 'Signika', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  }
-  
-  a {
-    color: var(--text);
-    font-weight: bold;
-    transition: all 0.3s;
-  }
-  
-  a:hover {
-    text-shadow: 0 0 10px var(--highlight);
-  }
-  
-  .hero {
-    /* max-height: 100vh; */
-    display: grid;
-    grid-template-areas: "fill";
-    text-align: center;
-    position: relative;
-  }
+  --bg: #2f3530;
+  --bg-tr: #2f353055;
+  --text: #FFF;
+  --heading: #ecaf35;
+  --highlight: #d01117;
+}
 
-  .hero > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-area: fill;
-  }
+/* 
+  Body
+*/
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 1.2rem;
+  overflow-x: hidden;
 
-  .hero-text {
-    font-size: 1.5rem;
-    grid-area: fill;
-    background: linear-gradient(transparent, transparent 80vh,var(--bg));
-    backdrop-filter: blur(0.5em);
-    height: 100%;
-    width: 100%;
-    /* display:flex;
-    flex-direction: column;
-    justify-content: center; */
-  }
+  font-family: 'Signika', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
 
-  .logo {
-    max-height: 20vh;
-    max-width: 100%;
-    margin-inline: auto;
-    display: block;
-    margin-block-start: 2rem;
-  }
+
+/* 
+  Links
+*/
+a {
+  color: var(--text);
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+a:hover {
+  text-shadow: 0 0 10px var(--highlight);
+}
+
+/* 
+  Hero for index.html (and variant for Splash.html)
+*/
+.hero {
+  max-height: 100vh;
+  display: grid;
+  grid-template-areas: "fill";
+  text-align: center;
+  position: relative;
+}
+
+.hero > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  grid-area: fill;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  grid-area: fill;
+  background: linear-gradient(transparent, transparent 80vh,var(--bg));
+  backdrop-filter: blur(0.5em);
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.splash {
+  max-height: none;
+}
+
+.splash > img {
+  /* height: 100%; */
+}
+
+.splash .hero-text {
+  display: block
+}
+
+.logo {
+  max-height: 20vh;
+  max-width: 100%;
+  margin-inline: auto;
+  display: block;
+  margin-block-start: 2rem;
+}
+
+
+/* 
+  Headings
+*/
   
 h1, h2, h3, h4, h5, h6 {
   font-family: 'K2D', sans-serif;
@@ -73,10 +99,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.active-navlink {
-  font-weight: bold;
-  color: var(--heading)
-}
 
 .container {
   max-width: 75ch;
@@ -126,8 +148,17 @@ h1, h2, h3, h4, h5, h6 {
   left: 38%;
   /* top: 50%; */
   height: 30vh;
-  width: 65ch;
+  max-width: 45ch;
   bottom: 10%;
+}
+.ctct-form-embed.form_0 .ctct-form-defaults {
+  background-color: transparent;
+}
+.ctct-form-header, div.ctct-form-embed div.ctct-form-defaults h2.ctct-form-header {
+  color: var(--heading) !important;
+}
+.ctct-form-text {
+  color: var(--text);
 }
 
 .formlist {
@@ -135,9 +166,11 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
-.submitButton {
-  height: 2.5em;
-  width: 7em;
+.ctct-form-button {
+  background-color: var(--highlight) !important;
+  border: none !important;
+  color: var(--text) !important;
+  font-weight: bold !important;
 }
 
 .list {
@@ -147,30 +180,6 @@ h1, h2, h3, h4, h5, h6 {
 li{
   margin: 15px 0;
 }
-
-.weiner {
-    top: 50%;
-    left: 50%;
-    width: 120px;
-    height: 120px;
-    margin:-60px 0 0 -60px;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-}
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
-}
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
-}
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
-}
-
 
 header {
   padding: 0.5rem 0.5rem 0.5rem 2.5rem;
@@ -198,9 +207,11 @@ header.open {
   cursor: pointer;
   background-color: transparent;
 }
+
 .hamburger-helper:focus {
   outline: none;
 }
+
 .hamburger, .hamburger::before, .hamburger::after {
   position: absolute;
   height: 3px;
@@ -209,38 +220,51 @@ header.open {
   border-radius: 5px;
   transition: all 0.4s;
 }
+
 .hamburger {
   top: 1rem;
   left: 0.5rem;
   color: transparent
 }
+
 .open .hamburger {
   transform: rotate(45deg);
 }
+
 .hamburger::before {
   content: '';
   top: -6px;
   left: 0;
   opacity: 1;
 }
+
 .open .hamburger::before {
   opacity: 0;
 }
+
 .hamburger::after {
   content: '';
   top: 6px;
   left:0;
 }
+
 .open .hamburger::after {
   transform: rotate(-90deg) translate(5px,-1px);
 }
+
 nav {
   opacity: 0;
   transition-property: opacity;
   transition-duration: 0.8s;
 }
+
 .open nav {
   opacity: 1;
+}
+
+.active-navlink {
+  font-weight: bold;
+  color: var(--heading)
 }
 
 
@@ -369,3 +393,8 @@ nav {
   }
 }
 
+
+
+/* 
+  Animations
+*/
