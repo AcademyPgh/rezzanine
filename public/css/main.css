@@ -120,9 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .backdrop-color {
-  background: rgb(32, 36, 33);
- box-shadow:0 0 10px 10px #424743;
- border-radius: 5px;
+  box-shadow: 0px 10px 8px -7px var(--highlight);
 }
 
 

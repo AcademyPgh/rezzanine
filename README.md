@@ -13,7 +13,7 @@ For step 4, we used the Live Server extension for VS Code, and this repo include
 ## Credits
 
 - Paul Stefko (@ham2anv)
-- Domenic (@cthulhuchrist49)
+- Domenic Betters github(@cthulhuchrist49) artstation(artstation.com/cthulhuchrist)
 - Brandon (@Bbakowski)
 - Rich  (@richcstanley)
 - Imani 
