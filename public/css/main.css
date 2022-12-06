@@ -263,6 +263,22 @@ nav {
 }
 
 
+.button {
+  display: block;
+  padding: 0.5rem 1rem 0.7rem 1rem;
+  background-color: var(--highlight);
+  width: max-content;
+  margin: 1rem auto;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.button:hover {
+  color: var(--text);
+  transform: scale(1.05);
+  box-shadow: 0px 10px 8px -7px var(--highlight);
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   .game-cards div .backing {
       animation: none;
@@ -310,9 +326,24 @@ nav {
   border: none !important;
   color: var(--text) !important;
   font-weight: bold !important;
+  transition: all 0.4s;
+}
+.ctct-form-button:hover {
+  box-shadow: 0px 10px 8px -7px var(--highlight) !important;
+  transform: scale(1.05);
 }
 
 
+
+.callout {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--heading);
+}
+
+.drop-shadow {
+  box-shadow: 0px 10px 8px -7px var(--highlight);
+}
 
 @media screen and (min-width: 600px), screen and (min-device-width: 600px) {
   .game-cards img {
@@ -359,6 +390,7 @@ nav {
     width: 65ch;
     bottom: 10%;
   }
+
   
 
   header {
