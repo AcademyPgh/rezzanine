@@ -54,8 +54,43 @@
                 <p>The Rezzanine has gathered a ton of current favorites and competitive multiplayer staples.  We are constantly updating our library with new and classic games so you never get bored.  Feel free to drop a line and suggest anything you want to see.  Check out some of the titles we are running right now…  </p>
                 <a href="" class="button">View Our Games</a>
             </div>
-            <img src="http://cdn.shopify.com/s/files/1/0630/8509/products/pst0074leaglg_grande.jpg?v=1532019905" alt="League of Legends" class="drop-shadow">
+
+            <div class="new-games-container drop-shadow">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="new-games fade">
+                  <img src="images/games/fortnite.jpg" style="width:100%">
+                </div>
+              
+                <div class="new-games fade">
+                  <img src="images/games/lol.jpg" style="width:100%">
+                </div>
+              
+                <div class="new-games fade">
+                  <img src="images/games/gow.jpg" style="width:100%">
+                </div>
+            </div>
+              
+               
+
         </section>
     </main>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("new-games");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 </html>
