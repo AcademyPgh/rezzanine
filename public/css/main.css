@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   max-width: 75ch;
-  margin: 2em 0.5rem;
+  margin: 4rem 0.5rem 2rem 0.5rem;
   scrollbar-width:thin;
   scrollbar-color:#d01117 rgba(47,53,48,0);
 
@@ -227,7 +227,7 @@ nav {
 
 @media screen and (min-width: 600px), screen and (min-device-width: 600px) {
   .container {
-    margin: 2rem auto;
+    margin: 4rem auto;
   }
   .three-up {
     display: flex;
@@ -313,27 +313,26 @@ nav {
   }
 }
 
+
+.image-right {
+  margin: 2rem 1rem;
+  display: block;
+}
+
+.image-right img {
+  max-width: 100%;
+  display: block;
+}
+
 @media screen and (min-width: 600px), screen and (min-device-width: 600px) {
   .game-cards img {
       grid-auto-rows: 325px;
   }
   .image-right {
     display: grid;
-    grid-template-columns: auto minmax(30vw, 1fr);
+    grid-template-columns: 65ch max-content;
     margin: 2rem auto;
     width: max-content;
   }
-
-  .image-right div {
-    max-width: 65ch;
-  }
-
 }
 
-.image-right {
-  margin: 2rem 1rem;
-}
-
-.image-right img {
-  max-width: 100%;
-}
