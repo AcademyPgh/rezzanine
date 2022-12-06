@@ -39,6 +39,18 @@ a:hover {
   text-shadow: 0 0 10px var(--highlight);
 }
 
+.hidden {
+  color: var(--text);
+  font-weight: normal;
+  transition: none;
+  cursor:text;
+}
+
+.hidden:hover {
+  text-shadow: none;
+  cursor:text;
+}
+
 /* 
   Hero for index.html (and variant for Splash.html)
 */
@@ -456,6 +468,7 @@ nav {
 .fade {
   animation-name: fade;
   animation-duration: 2s;
+  background-color: #d01117;
 }
 
 @keyframes fade {
