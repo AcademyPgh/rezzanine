@@ -21,13 +21,13 @@ export default function Header(props) {
         </div>
         <nav>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/pricing/">Hours & Pricing</NavLink>
+          <NavLink to="/planyourvisit/">Plan Your Visit</NavLink>
           <NavLink to="/games/">Games</NavLink>
           <NavLink to="/events/">Events</NavLink>
           <NavLink to="/community/">Community</NavLink>
-          <NavLink to="/food/">Food</NavLink>
           <NavLink to="/faq/">FAQ</NavLink>
           <NavLink to="/codeofconduct/">Code of Conduct</NavLink>
+         
         </nav>
       </header>
     )

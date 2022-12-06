@@ -20,16 +20,14 @@ export default function Header(props) {
   }, "Menu")), /*#__PURE__*/React.createElement("nav", null, /*#__PURE__*/React.createElement(NavLink, {
     to: "/"
   }, "Home"), /*#__PURE__*/React.createElement(NavLink, {
-    to: "/pricing/"
-  }, "Hours & Pricing"), /*#__PURE__*/React.createElement(NavLink, {
+    to: "/planyourvisit/"
+  }, "Plan Your Visit"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/games/"
   }, "Games"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/events/"
   }, "Events"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/community/"
   }, "Community"), /*#__PURE__*/React.createElement(NavLink, {
-    to: "/food/"
-  }, "Food"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/faq/"
   }, "FAQ"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/codeofconduct/"
