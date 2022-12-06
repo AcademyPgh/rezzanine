@@ -20,7 +20,7 @@ export default function Header(props) {
   }, "Menu")), /*#__PURE__*/React.createElement("nav", null, /*#__PURE__*/React.createElement(NavLink, {
     to: "/"
   }, "Home"), /*#__PURE__*/React.createElement(NavLink, {
-    to: "/planyourvisit/"
+    to: "/visit/"
   }, "Plan Your Visit"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/games/"
   }, "Games"), /*#__PURE__*/React.createElement(NavLink, {
@@ -30,6 +30,6 @@ export default function Header(props) {
   }, "Community"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/faq/"
   }, "FAQ"), /*#__PURE__*/React.createElement(NavLink, {
-    to: "/codeofconduct/"
+    to: "/conduct/"
   }, "Code of Conduct")));
 }
