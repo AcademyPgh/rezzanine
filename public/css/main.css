@@ -39,6 +39,18 @@ a:hover {
   text-shadow: 0 0 10px var(--highlight);
 }
 
+.hidden {
+  color: var(--text);
+  font-weight: normal;
+  transition: none;
+  cursor:text;
+}
+
+.hidden:hover {
+  text-shadow: none;
+  cursor:text;
+}
+
 /* 
   Hero for index.html (and variant for Splash.html)
 */
@@ -431,4 +443,35 @@ nav {
 @keyframes spin {
   from {rotate: 0deg}
   to {rotate: 360deg}
+}
+
+.new-games-container {
+  width: 600px;
+  max-width: 80vw;
+  max-height: 450px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.new-games-container img {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.new-games {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  background-color: #d01117;
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
 }
