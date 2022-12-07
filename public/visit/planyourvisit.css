@@ -1,0 +1,146 @@
+.info-window{
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+margin:auto;
+margin-top: 5em;
+width: 85%;
+
+height: auto;
+}
+
+
+/* #2f3530; */
+.info-box{
+/* display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items:center; */
+margin:15px;
+padding:30px;
+width: 100%;
+max-width: 30ch;
+/* min-width: 20ch;
+min-height:100%; */
+/* border: 2px outset #2f322f; */
+background-color: #444b44;
+box-shadow: 0px 10px 8px -7px var(--highlight);
+text-align: center;
+
+}
+
+.section-window{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top: 5em;
+    width: 85%;
+    height: auto;  
+}
+
+.section-header{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    margin:20px;
+    text-align: center;
+}
+
+.food-image{
+    width: 45%;
+    height:630px;
+    min-width:18rem;
+    box-shadow: 0px 10px 8px -7px var(--highlight);
+    margin:20px;
+    overflow: hidden;
+    background-image: url("../images/snackbar.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.food-menu {
+    background-color: transparent;
+    width: 20%;
+    height:630px;
+    min-width:18rem;
+    box-shadow: 0px 10px 8px -7px var(--highlight);
+    margin:20px;
+    background-image: url("../images/hotdogs.jpg");
+    font-size: 1.6em;
+    display:grid;
+    place-content:center;
+    background-size: cover;
+    text-align: left;
+    
+}
+
+.drink-menu {
+  background-color: transparent;
+  width: 20%;
+  height:630px;
+  min-width:18rem;
+  box-shadow: 0px 10px 8px -7px var(--highlight);
+  margin:20px;
+  background-image: url("../images/drinks.jpg");
+  font-size: 2.2em;
+  display:grid;
+  place-content:center;
+  background-size: cover;
+  text-align: left;
+}
+
+.group-section{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  width:100%;
+  max-width: 80vw;
+  height:auto;
+  margin: 15px;
+  justify-content: right;
+  
+
+  
+}
+
+.group-img{
+display: flex;
+max-width: 80vw;
+box-shadow: 0px 10px 8px -7px var(--highlight);
+}
+
+.group-text{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 80vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 8px -7px var(--highlight);
+  border: 2px outset #2f322f;
+  background-color: #444b44;
+}
+
+@media screen and (min-width: 600px), screen and (min-device-width: 600px) {
+.group-text{
+  min-width: 55%;
+  width: 55%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+
+
+
+
+
+
+
