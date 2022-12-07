@@ -1,41 +1,38 @@
-.info-window{
-display:flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-margin:auto;
-margin-top: 5em;
-width: 85%;
-
-height: auto;
+.info-window {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:auto;
+  margin-top: 5em;
+  width: 85%;
+  height: auto;
 }
 
 
-/* #2f3530; */
-.info-box{
-margin:15px auto;
-padding:30px;
-width: 85%;
-max-width: 35ch;
-background-color: #444b44;
-box-shadow: 0px 10px 8px -7px var(--highlight);
-text-align: center;
-
+.info-box {
+  margin:15px auto;
+  padding:30px;
+  width: 85%;
+  max-width: 35ch;
+  background-color: #444b44;
+  box-shadow: 0px 10px 8px -7px var(--highlight);
+  text-align: center;
 }
 
-.section-window{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin:auto;
-    margin-top: 5em;
-    width: 85%;
-    height: auto;  
+.section-window {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  margin-top: 5em;
+  width: 85%;
+  height: auto;  
 }
 
-.section-header{
+.section-header {
     display:flex;
     justify-content: center;
     width:100%;
@@ -43,7 +40,7 @@ text-align: center;
     text-align: center;
 }
 
-.food-image{
+.food-image {
     width: 45%;
     height:630px;
     min-width:18rem;
@@ -54,8 +51,6 @@ text-align: center;
     background-size: cover;
     background-position: center;
 }
-
-
 
 .food-menu {
     background-color: transparent;
@@ -88,7 +83,7 @@ text-align: center;
   text-align: left;
 }
 
-.group-section{
+.group-section {
   display:flex;
   flex-wrap:wrap;
   flex-direction: row;
@@ -97,18 +92,15 @@ text-align: center;
   height:auto;
   margin: 15px;
   justify-content: right;
-  
-
-  
 }
 
-.group-img{
-display: flex;
-max-width: 80vw;
-box-shadow: 0px 10px 8px -7px var(--highlight);
+.group-img {
+  display: flex;
+  max-width: 80vw;
+  box-shadow: 0px 10px 8px -7px var(--highlight);
 }
 
-.group-text{
+.group-text {
   display: flex;
   flex-wrap: wrap;
   min-width: 80vw;
@@ -121,23 +113,15 @@ box-shadow: 0px 10px 8px -7px var(--highlight);
 }
 
 @media screen and (min-width: 600px), screen and (min-device-width: 600px) {
-.group-text{
-  min-width: 55%;
-  width: 55%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  .group-text {
+    min-width: 55%;
+    width: 55%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-box {
+    max-width: min(25vw, 30ch);
+  }
 }
-
-.info-box {
-  max-width: min(25vw, 30ch);
-}
-}
-
-
-
-
-
-
-
-

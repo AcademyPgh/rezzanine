@@ -66,8 +66,6 @@ a:hover {
  
 }
 
-
-
 .hero > img {
   width: 100%;
   height: 100vh;
@@ -89,10 +87,6 @@ a:hover {
 
 .splash {
   max-height: none;
-}
-
-.splash > img {
-  /* height: 100%; */
 }
 
 .splash .hero-text {
@@ -128,7 +122,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
+/* 
+  Containers and layout
+*/
 .container {
   max-width: 75ch;
   margin: 4rem 0.5rem 2rem 0.5rem;
@@ -152,18 +148,20 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   display: block;
   margin: 1em auto;
-
-  /* box-shadow: 0px 10px 8px -7px var(--highlight); */
 }
 
 .list {
   text-align: left;
 }
 
-li{
+li {
   margin: 15px 0;
 }
 
+
+/* 
+  Header/nav
+*/
 header {
   padding: 0.5rem 0.5rem 0.5rem 2.5rem;
   position: absolute;
@@ -195,7 +193,9 @@ header.open {
   outline: none;
 }
 
-.hamburger, .hamburger::before, .hamburger::after {
+.hamburger, 
+.hamburger::before, 
+.hamburger::after {
   position: absolute;
   height: 3px;
   width: 20px;
@@ -251,10 +251,9 @@ nav {
 }
 
 
-
-
-
-
+/* 
+  Game posters
+*/
 .game-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -288,6 +287,9 @@ nav {
 }
 
 
+/* 
+  CTA buttons
+*/
 .button {
   display: block;
   padding: 0.5rem 1rem 0.7rem 1rem;
@@ -297,6 +299,7 @@ nav {
   text-decoration: none;
   transition: all 0.4s;
 }
+
 .button:hover {
   color: var(--text);
   transform: scale(1.05);
@@ -311,20 +314,25 @@ nav {
 }
 
 
-.image-right, .image-left {
+/* 
+  Side-by-side cards
+*/
+.image-right, 
+.image-left {
   margin: 2rem 1rem;
   display: block;
 }
 
-.image-right img, .image-left img {
+.image-right img, 
+.image-left img {
   max-width: 100%;
   min-width: 300px;
 }
 
 
-
-
-
+/* 
+  Embellishments
+*/
 .callout {
   font-size: 1.3rem;
   font-weight: bold;
@@ -335,41 +343,44 @@ nav {
   box-shadow: 0px 10px 8px -7px var(--highlight);
 }
 
+
+/* 
+  Responsive media queries
+*/
 @media screen and (min-width: 900px) {
   .game-cards img {
       grid-auto-rows: 325px;
   }
+  .image-left,
   .image-right {
     display: grid;
-    grid-template-columns: minmax(50ch,1fr) 1fr;
     column-gap: 1rem;
     align-items: center;
     margin: 2rem auto;
     padding: 0 1rem;
   }
 
+  .image-right {
+    grid-template-columns: minmax(50ch,1fr) 1fr;
+  }
+
   .image-left {
-    display: grid;
     grid-template-columns: 1fr minmax(50ch,1fr);
-    column-gap: 1rem;
-    align-items: center;
-    margin: 2rem auto;
-    width: auto;
   }
 
   .container {
     margin: 4rem auto;
   }
+
   .three-up {
     display: flex;
     justify-content: space-evenly;
     margin: 2em 0;
   }
+
   .card {
     max-width: 20vw;
   }
-
-  
 
   header {
     text-align: center;
@@ -382,6 +393,7 @@ nav {
     transition: none;
     white-space: inherit;
   }
+
   header > nav {
     display: flex;
     flex-wrap: wrap;
@@ -393,36 +405,35 @@ nav {
     header > nav > div:not(:first-of-type) {
       margin-inline-start: 1.5em;
     }
-    
 
   .hamburger-helper {
     display: none;
   }
   
   .new-games,
-.image-left > img,
-.image-right > img {
-  max-width: 40vw;
-  width: 100%;
-}
+  .image-left > img,
+  .image-right > img {
+    max-width: 40vw;
+    width: 100%;
+  }
 
-.new-games-container {
-  width: max-content
-}
+  .new-games-container {
+    width: max-content
+  }
 
-.image-right > div:first-child,
-.image-left > div:first-child {
-  max-width: 65ch;
-}
+  .image-right > div:first-child,
+  .image-left > div:first-child {
+    max-width: 65ch;
+  }
 
-.image-right {
-  grid-template-columns: minmax(1ch,65ch) max-content;
-  justify-content: center;
-}
+  .image-right {
+    grid-template-columns: minmax(1ch,65ch) max-content;
+    justify-content: center;
+  }
 
-.image-left {
-  grid-template-columns: max-content minmax(1ch,65ch);
-}
+  .image-left {
+    grid-template-columns: max-content minmax(1ch,65ch);
+  }
 }
 
 /* 
@@ -430,7 +441,6 @@ nav {
 */
 
 .new-games-container {
-  /* width: 600px; */
   max-width: 100%;
   max-height: 450px;
   position: relative;
@@ -476,4 +486,3 @@ nav {
   from {opacity: .2}
   to {opacity: 1}
 }
-
