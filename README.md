@@ -1,5 +1,5 @@
 # rezzanine
-A website for The Rezzanine, an arcade and eSports venue opening in Bridgevill, PA. Created by students of [Academy Pittsburgh] as their final project.
+A website for The Rezzanine, an arcade and eSports venue opening in Bridgeville, PA. Created by students of [Academy Pittsburgh] as their final project.
 
 ## How to Use
 
