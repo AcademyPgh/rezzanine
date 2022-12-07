@@ -451,7 +451,7 @@ nav {
 .new-games-container img {
   position: relative;
   display: block;
-  width: 100%;
+  width: 800px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
