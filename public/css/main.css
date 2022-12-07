@@ -383,6 +383,30 @@ nav {
     display: none;
   }
   
+  .new-games,
+.image-left > img,
+.image-right > img {
+  max-width: 40vw;
+  width: 100%;
+}
+
+.new-games-container {
+  width: max-content
+}
+
+.image-right > div:first-child,
+.image-left > div:first-child {
+  max-width: 65ch;
+}
+
+.image-right {
+  grid-template-columns: minmax(1ch,65ch) max-content;
+  justify-content: center;
+}
+
+.image-left {
+  grid-template-columns: max-content minmax(1ch,65ch);
+}
 }
 
 /* 
@@ -390,7 +414,7 @@ nav {
 */
 
 .new-games-container {
-  width: 600px;
+  /* width: 600px; */
   max-width: 100%;
   max-height: 450px;
   position: relative;
@@ -416,6 +440,11 @@ nav {
   background-color: #d01117;
 }
 
+.new-games,
+.image-left > img,
+.image-right > img {
+  width: 100%;
+}
 
 
 /* 

@@ -13,17 +13,10 @@ height: auto;
 
 /* #2f3530; */
 .info-box{
-/* display:flex;
-flex-direction: column;
-flex-wrap: wrap;
-align-items:center; */
-margin:15px;
+margin:15px auto;
 padding:30px;
 width: 100%;
 max-width: 30ch;
-/* min-width: 20ch;
-min-height:100%; */
-/* border: 2px outset #2f322f; */
 background-color: #444b44;
 box-shadow: 0px 10px 8px -7px var(--highlight);
 text-align: center;
