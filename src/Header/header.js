@@ -12,7 +12,6 @@ export default function Header(props) {
 
     return (
       <header className={open && 'open'}>
-        <img src="/images/REZZANINE-LOGO.png" className="header-logo" />
         <div 
           className="hamburger-helper" 
           onClick={() => {setOpen(!open)}} 

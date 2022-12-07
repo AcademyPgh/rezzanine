@@ -250,6 +250,14 @@ nav {
   color: var(--heading)
 }
 
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12vw;
+  z-index: 100000;
+}
+
 
 /* 
   Game posters
