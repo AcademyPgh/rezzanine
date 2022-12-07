@@ -15,8 +15,8 @@ height: auto;
 .info-box{
 margin:15px auto;
 padding:30px;
-width: 100%;
-max-width: 30ch;
+width: 85%;
+max-width: 35ch;
 background-color: #444b44;
 box-shadow: 0px 10px 8px -7px var(--highlight);
 text-align: center;
@@ -127,6 +127,10 @@ box-shadow: 0px 10px 8px -7px var(--highlight);
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.info-box {
+  max-width: min(25vw, 30ch);
 }
 }
 
