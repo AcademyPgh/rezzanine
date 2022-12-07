@@ -1,0 +1,67 @@
+/* 
+  Styling for splash page
+*/
+
+body {
+    margin-block-end: 2rem;
+}
+
+.ctct-inline-form {
+    position: static;
+    margin: 1rem;
+    left: 38%;
+    /* top: 50%; */
+    height: 30vh;
+    max-width: 45ch;
+    bottom: 10%;
+}
+
+.ctct-form-embed.form_0 .ctct-form-defaults {
+    background-color: var(--light-bg) !important;
+}
+
+.ctct-form-header, 
+div.ctct-form-embed div.ctct-form-defaults h2.ctct-form-header {
+    color: var(--heading) !important;
+}
+
+.ctct-form-text, 
+.ctct-form-label, 
+.ctct-gdpr-text  {
+    color: var(--text) !important;
+}
+
+.formlist {
+    display: block;
+    list-style: none;
+}
+
+.ctct-form-button {
+    background-color: var(--highlight) !important;
+    border: none !important;
+    color: var(--text) !important;
+    font-weight: bold !important;
+    transition: all 0.4s;
+}
+
+.ctct-form-button:hover {
+    box-shadow: 0px 10px 8px -7px var(--highlight) !important;
+    transform: scale(1.05);
+}
+
+.g-recaptcha {
+    display: none;
+}
+  
+
+@media screen and (min-width: 600px), screen and (min-device-width: 600px) {
+    .ctct-inline-form {
+        position: static;
+        margin: 1rem auto;
+        left: 38%;
+        /* top: 50%; */
+        height: 30vh;
+        width: 65ch;
+        bottom: 10%;
+    }
+}  

@@ -236,9 +236,6 @@ nav {
 
 
 
-.g-recaptcha {
-  display: none;
-}
 
 
 
@@ -305,45 +302,10 @@ nav {
 
 .image-right img, .image-left img {
   max-width: 100%;
-  display: block;
+  min-width: 300px;
 }
 
 
-.ctct-inline-form {
-  position: static;
-  margin: 1rem;
-  left: 38%;
-  /* top: 50%; */
-  height: 30vh;
-  max-width: 45ch;
-  bottom: 10%;
-}
-.ctct-form-embed.form_0 .ctct-form-defaults {
-  background-color: var(--light-bg) !important;
-}
-.ctct-form-header, div.ctct-form-embed div.ctct-form-defaults h2.ctct-form-header {
-  color: var(--heading) !important;
-}
-.ctct-form-text, .ctct-form-label, .ctct-gdpr-text  {
-  color: var(--text) !important;
-}
-
-.formlist {
-  display: block;
-  list-style: none;
-}
-
-.ctct-form-button {
-  background-color: var(--highlight) !important;
-  border: none !important;
-  color: var(--text) !important;
-  font-weight: bold !important;
-  transition: all 0.4s;
-}
-.ctct-form-button:hover {
-  box-shadow: 0px 10px 8px -7px var(--highlight) !important;
-  transform: scale(1.05);
-}
 
 
 
@@ -357,31 +319,28 @@ nav {
   box-shadow: 0px 10px 8px -7px var(--highlight);
 }
 
-@media screen and (min-width: 600px), screen and (min-device-width: 600px) {
+@media screen and (min-width: 900px) {
   .game-cards img {
       grid-auto-rows: 325px;
   }
   .image-right {
     display: grid;
-    grid-template-columns: 65ch max-content;
+    grid-template-columns: minmax(50ch,1fr) 1fr;
     column-gap: 1rem;
     align-items: center;
     margin: 2rem auto;
-    width: max-content;
+    padding: 0 1rem;
   }
 
   .image-left {
     display: grid;
-    grid-template-columns: max-content 65ch;
+    grid-template-columns: 1fr minmax(50ch,1fr);
     column-gap: 1rem;
     align-items: center;
     margin: 2rem auto;
-    width: max-content;
-
+    width: auto;
   }
-}
 
-@media screen and (min-width: 600px), screen and (min-device-width: 600px) {
   .container {
     margin: 4rem auto;
   }
@@ -392,15 +351,6 @@ nav {
   }
   .card {
     max-width: 20vw;
-  }
-  .ctct-inline-form {
-    position: static;
-    margin: 1rem auto;
-    left: 38%;
-    /* top: 50%; */
-    height: 30vh;
-    width: 65ch;
-    bottom: 10%;
   }
 
   
@@ -435,19 +385,13 @@ nav {
   
 }
 
-
 /* 
-  Animations
+  Image carousel
 */
-
-@keyframes spin {
-  from {rotate: 0deg}
-  to {rotate: 360deg}
-}
 
 .new-games-container {
   width: 600px;
-  max-width: 80vw;
+  max-width: 100%;
   max-height: 450px;
   position: relative;
   margin: auto;
@@ -461,6 +405,7 @@ nav {
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
 .new-games {
   display: none;
 }
@@ -471,7 +416,19 @@ nav {
   background-color: #d01117;
 }
 
+
+
+/* 
+  Animations
+*/
+
+@keyframes spin {
+  from {rotate: 0deg}
+  to {rotate: 360deg}
+}
+
 @keyframes fade {
   from {opacity: .2}
   to {opacity: 1}
 }
+
