@@ -8,7 +8,10 @@ export default function Header(props) {
   const [open, setOpen] = useState();
   return /*#__PURE__*/React.createElement("header", {
     className: open && 'open'
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "/images/REZZANINE-LOGO.png",
+    className: "header-logo"
+  }), /*#__PURE__*/React.createElement("div", {
     className: "hamburger-helper",
     onClick: () => {
       setOpen(!open);
