@@ -40,48 +40,6 @@
     text-align: center;
 }
 
-.food-image {
-    width: 45%;
-    height:630px;
-    min-width:18rem;
-    box-shadow: 0px 10px 8px -7px var(--highlight);
-    margin:20px;
-    overflow: hidden;
-    background-image: url("../images/snackbar.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.food-menu {
-    background-color: transparent;
-    width: 20%;
-    height:630px;
-    min-width:18rem;
-    box-shadow: 0px 10px 8px -7px var(--highlight);
-    margin:20px;
-    background-image: url("../images/hotdogs.jpg");
-    font-size: 1.6em;
-    display:grid;
-    place-content:center;
-    background-size: cover;
-    text-align: left;
-    
-}
-
-.drink-menu {
-  background-color: transparent;
-  width: 20%;
-  height:630px;
-  min-width:18rem;
-  box-shadow: 0px 10px 8px -7px var(--highlight);
-  margin:20px;
-  background-image: url("../images/drinks.jpg");
-  font-size: 2.2em;
-  display:grid;
-  place-content:center;
-  background-size: cover;
-  text-align: left;
-}
 
 .group-section {
   display:flex;
@@ -124,4 +82,38 @@
   .info-box {
     max-width: min(25vw, 30ch);
   }
+}
+
+.food-section {
+  background-image: url("/images/hotdogs.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 10px 8px -7px var(--highlight);
+}
+
+.food-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  background-color: var(--bg);
+  padding:3px;
+  width: 95%;
+  height: auto;
+}
+
+.menu-list {
+  list-style:none;
+  padding-left: 0;
+}
+
+.menu-board {
+  margin: 3px;
+  min-width:20ch; 
+  width:49%;
+  background-image: url("../images/drinks.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
