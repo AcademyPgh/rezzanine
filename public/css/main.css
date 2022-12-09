@@ -47,6 +47,7 @@ a:hover {
   font-weight: normal;
   transition: none;
   cursor:text;
+  text-decoration: none;
 }
 
 .hidden:hover {
