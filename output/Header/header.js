@@ -31,5 +31,10 @@ export default function Header(props) {
     to: "/faq/"
   }, "FAQ"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/conduct/"
-  }, "Code of Conduct")));
+  }, "Code of Conduct")), /*#__PURE__*/React.createElement("div", {
+    className: "navlogo"
+  }, /*#__PURE__*/React.createElement("img", {
+    className: "testypoo",
+    src: "/images/REZZANINE-LOGO.png"
+  })));
 }
