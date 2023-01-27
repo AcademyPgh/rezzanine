@@ -28,7 +28,7 @@ export default function Header(props) {
           <NavLink to="/faq/">FAQ</NavLink>
           <NavLink to="/conduct/">Code of Conduct</NavLink>
         </nav>
-        <div className="navlogo"><img className="testypoo"  src="/images/REZZANINE-LOGO.png"  /></div>
+        <div className="navlogo"><img className="testypoo"  src="/images/headerlogo.png"  /></div>
         
       </header>
     )

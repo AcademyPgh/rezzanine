@@ -177,7 +177,6 @@ header {
   right: 0;
   max-width: 0;
   height: auto;
-  overflow: hidden;
   z-index: 1000;
   transition: all 0.4s;
   white-space: nowrap;
@@ -187,7 +186,7 @@ header {
 }
 
 .navlogo {
-  width: 100px;
+  width: 75ch;
   display:flex;
   justify-content: center;
   align-self: center;
