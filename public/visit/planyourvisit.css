@@ -11,13 +11,29 @@
 
 
 .info-box {
-  margin:15px auto;
+  margin:15px 10px;
   padding:30px;
-  width: 85%;
-  max-width: 35ch;
+  min-width: fit-content;
   background-color: #444b44;
   box-shadow: 0px 10px 8px -7px var(--highlight);
   text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .hour-columns { 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.hour-columns {
+  display: flex; 
+  flex-direction: row; 
+}
+
+.hour-column {
+ width: 26ch;
 }
 
 .section-window {

@@ -122,6 +122,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--heading);
 }
 
+h5 {
+  text-decoration-line: underline;
+}
+
 
 /* 
   Containers and layout
@@ -137,6 +141,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .three-up {
   margin: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -405,7 +412,8 @@ nav {
   .three-up {
     display: flex;
     justify-content: space-evenly;
-    margin: 2em 0;
+    flex-wrap: wrap;
+    margin: 2em 0; 
   }
 
   .card {
