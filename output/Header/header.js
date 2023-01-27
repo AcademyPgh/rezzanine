@@ -35,6 +35,6 @@ export default function Header(props) {
     className: "navlogo"
   }, /*#__PURE__*/React.createElement("img", {
     className: "testypoo",
-    src: "/images/REZZANINE-LOGO.png"
+    src: "/images/headerlogo.png"
   })));
 }
