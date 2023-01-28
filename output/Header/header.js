@@ -27,7 +27,7 @@ export default function Header(props) {
     to: "/events/"
   }, "Events"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/community/"
-  }, "Community"), /*#__PURE__*/React.createElement(NavLink, {
+  }, "Contact & Community"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/faq/"
   }, "FAQ"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/conduct/"
