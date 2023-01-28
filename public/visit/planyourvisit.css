@@ -5,7 +5,6 @@
   justify-content: center;
   margin:auto;
   margin-top: 5em;
-  width: 85%;
   height: auto;
 }
 
@@ -29,6 +28,12 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .info-window {
+    max-width: 85%;
+  }
+  .useful-box {
+    min-width: 85%;
+  }
 }
 
 .hour-columns {
@@ -50,7 +55,6 @@
   margin-top: 5em;
   width: 85%;
   height: auto;  
-  background: #444b44aa;
 }
 
 .section-header {

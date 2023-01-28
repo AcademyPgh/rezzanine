@@ -24,7 +24,6 @@ body {
   color: var(--text);
   font-size: 1.5rem;
   overflow-x: hidden;
-
   font-family: 'Signika', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -414,7 +413,7 @@ nav {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 2em 0; 
+    margin: 2em 0;
   }
 
   .card {
@@ -537,6 +536,6 @@ nav {
 }
 
 .section-splitter {
-  background-color: var(--light-bg);
+  background-color: #444b44aa;
 }
 
