@@ -27,9 +27,14 @@ export default function Header(props) {
     to: "/events/"
   }, "Events"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/community/"
-  }, "Community"), /*#__PURE__*/React.createElement(NavLink, {
+  }, "Contact & Community"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/faq/"
   }, "FAQ"), /*#__PURE__*/React.createElement(NavLink, {
     to: "/conduct/"
-  }, "Code of Conduct")));
+  }, "Code of Conduct")), /*#__PURE__*/React.createElement("div", {
+    className: "navlogo"
+  }, /*#__PURE__*/React.createElement("img", {
+    className: "testypoo",
+    src: "/images/headerlogo.png"
+  })));
 }

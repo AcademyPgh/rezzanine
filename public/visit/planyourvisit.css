@@ -5,19 +5,44 @@
   justify-content: center;
   margin:auto;
   margin-top: 5em;
-  width: 85%;
   height: auto;
 }
 
 
 .info-box {
-  margin:15px auto;
+  margin:15px 10px;
   padding:30px;
-  width: 85%;
-  max-width: 35ch;
-  background-color: #444b44;
+  min-width: fit-content;
+  background-color: #444b44aa;
   box-shadow: 0px 10px 8px -7px var(--highlight);
   text-align: center;
+}
+
+.useful-box {
+  min-width:45ch;
+}
+
+@media screen and (max-width: 900px) {
+  .hour-columns { 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info-window {
+    max-width: 85%;
+  }
+  .useful-box {
+    min-width: 85%;
+  }
+}
+
+.hour-columns {
+  display: flex; 
+  flex-direction: row; 
+}
+
+.hour-column {
+ width: 26ch;
 }
 
 .section-window {
@@ -67,7 +92,7 @@
   align-items: center;
   box-shadow: 0px 10px 8px -7px var(--highlight);
   border: 2px outset #2f322f;
-  background-color: #444b44;
+  background-color: #444b44aa;
 }
 
 @media screen and (min-width: 600px), screen and (min-device-width: 600px) {
@@ -85,7 +110,7 @@
 }
 
 .food-section {
-  background-image: url("/images/hotdogs.jpg");
+  background: #444b44aa;
   background-size: cover;
   background-position: center;
   box-shadow: 0px 10px 8px -7px var(--highlight);
@@ -97,7 +122,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px;
-  background-color: var(--bg);
   padding:3px;
   width: 95%;
   height: auto;
@@ -116,4 +140,22 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: 0px 0px 8px 7px #c0d4c0aa;
+  padding: 10px;
+}
+.menu-columns {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+  .menu-columns {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu-list {
+    margin-bottom:0;
+    margin-top:0;
+  }
 }

@@ -24,10 +24,12 @@ export default function Header(props) {
           <NavLink to="/visit/">Plan Your Visit</NavLink>
           <NavLink to="/games/">Games</NavLink>
           <NavLink to="/events/">Events</NavLink>
-          <NavLink to="/community/">Community</NavLink>
+          <NavLink to="/community/">Contact & Community</NavLink>
           <NavLink to="/faq/">FAQ</NavLink>
           <NavLink to="/conduct/">Code of Conduct</NavLink>
         </nav>
+        <div className="navlogo"><img className="testypoo"  src="/images/headerlogo.png"  /></div>
+        
       </header>
     )
 }
