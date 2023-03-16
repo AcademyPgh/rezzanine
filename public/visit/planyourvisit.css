@@ -132,6 +132,10 @@
   padding-left: 0;
 }
 
+.right-side {
+  text-align: end;
+}
+
 .menu-board {
   margin: 3px;
   min-width:20ch; 
@@ -157,5 +161,9 @@
   .menu-list {
     margin-bottom:0;
     margin-top:0;
+  }
+
+  .right-side {
+    text-align: start;
   }
 }
