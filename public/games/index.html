@@ -20,7 +20,7 @@
             <h4>Just create or log in with your personal Steam account while at the Rezzanine and you will gain access to all these games to check out and play!</h4>
         </div>
         <div id="games"></div>
-        <div class="container">
+        <div class="container extra-game-list">
             <h3>We also have...</h3>
             <ul>
                 <li>Warframe</li>
@@ -69,13 +69,20 @@
 
 <style>
 ul {
-    display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 15px;
 }
 
 li {
     margin: 20px;
+}
+
+@media (max-width: 559.5px) {
+    ul{
+        grid-template-columns: repeat(2, 1fr);
+        font-size: .8em;
+    }
 }
 
 </style>
