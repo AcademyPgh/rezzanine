@@ -26,10 +26,29 @@
                 background: var(--bg-tr);
             }
         }
+
+
     </style>
 </head>
 <body>
+  
 <div id="header"></div>
+<button class="modalbutton"id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <a href="mailto:info@rezzanineesports.com"><image class = "modal-image" src="./images/fantasydraft.png"/></a>
+    
+  </div>
+        </div>
+
+
+
+</div>
     <div  class="hero">
         <img src="https://images.unsplash.com/photo-1636036824578-d0d300a4effb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="">
         <div class="hero-text">
@@ -37,7 +56,8 @@
             <h1>WHERE GAMERS THRIVE</h1>
             <div>1025 Washington Pike<br>
                 Bridgeville , PA 15017 </div>
-        </div>
+
+               
         </div>
     </div>
     <main>
@@ -110,6 +130,32 @@
         slides[slideIndex-1].style.display = "block";
         setTimeout(showSlides, 3000); // Change image every 2 seconds
         }
+
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
     </script>
 </body>
 </html>
