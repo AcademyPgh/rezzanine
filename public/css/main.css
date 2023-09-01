@@ -264,6 +264,7 @@ header.open {
   max-width: 100%;
   right: 0;
   background: linear-gradient(to right, transparent 2.4rem, var(--bg-tr) 2.4rem);
+  
 }
 
 .hamburger-helper {
@@ -325,6 +326,7 @@ nav {
   opacity: 0;
   transition-property: opacity;
   transition-duration: 0.8s;
+  font-size: .85em;
 }
 
 .open nav {
@@ -380,6 +382,31 @@ nav {
   animation: 10s spin linear infinite;
 }
 
+.membership-image {
+  width:50%;
+  height:60vh;
+  object-fit: cover;
+}
+
+.membership-box {
+  display:flex;
+  
+  justify-content: space-between ;
+}
+
+.join-us {
+  padding: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .membership-image {
+    width:80%;
+  }
+  .membership-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /* 
   CTA buttons

@@ -27,6 +27,7 @@ export default function Header(props) {
           <NavLink to="/community/">Contact & Community</NavLink>
           <NavLink to="/faq/">FAQ</NavLink>
           <NavLink to="/conduct/">Code of Conduct</NavLink>
+          <NavLink to="/membership/">Membership</NavLink>
         </nav>
         <div className="navlogo"><img className="testypoo"  src="/images/headerlogo.png"  /></div>
         
